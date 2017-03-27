@@ -14,6 +14,7 @@ import UIKit
 protocol AlbumListInteractorInput
 {
   func fetchAlbums(request: AlbumList.Something.Request)
+    var albums: [Album] { get }
 }
 
 protocol AlbumListInteractorOutput
@@ -26,6 +27,7 @@ class AlbumListInteractor: AlbumListInteractorInput
   var output: AlbumListInteractorOutput!
   var worker: AlbumListWorker = AlbumListWorker(albumStore: AlbumStore())
 
+  var albums: [Album] = []
   // MARK: - Business logic
   
   func fetchAlbums(request: AlbumList.Something.Request)
@@ -33,6 +35,7 @@ class AlbumListInteractor: AlbumListInteractorInput
 
         // NOTE: Pass the result to the Presenter
     worker.fetchMeTheAblums {[weak self] (data) in
+        self?.albums = data
         let response = AlbumList.Something.Response(albums: data)
         self?.output.presentSomething(response: response)
     }

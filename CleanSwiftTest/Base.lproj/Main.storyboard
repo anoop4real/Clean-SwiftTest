@@ -68,6 +68,7 @@
                                             <outlet property="artistLbl" destination="noW-ui-MVA" id="gv1-3a-kuf"/>
                                             <outlet property="thumbImage" destination="bcX-Yc-GcW" id="dp0-iu-8Nf"/>
                                             <outlet property="titleLbl" destination="dnX-zL-sAm" id="9vB-kn-sJ5"/>
+                                            <segue destination="ELW-su-v77" kind="show" identifier="shownext" id="ce8-W8-eWd"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -92,6 +93,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="129.98500749625188"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="psJ-W5-Zec">
+            <objects>
+                <viewController id="ELW-su-v77" customClass="DetailsViewController" customModule="CleanSwiftTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V9M-oL-LzN"/>
+                        <viewControllerLayoutGuide type="bottom" id="ceS-lE-c6p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v0E-2K-ejK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xog-xW-fc0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757" y="127"/>
         </scene>
     </scenes>
 </document>

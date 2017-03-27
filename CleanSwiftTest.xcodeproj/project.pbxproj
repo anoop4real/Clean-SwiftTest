@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA4100F41E89369200742E74 /* DetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4100ED1E89369200742E74 /* DetailsConfigurator.swift */; };
+		EA4100F51E89369200742E74 /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4100EE1E89369200742E74 /* DetailsInteractor.swift */; };
+		EA4100F61E89369200742E74 /* DetailsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4100EF1E89369200742E74 /* DetailsModels.swift */; };
+		EA4100F71E89369200742E74 /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4100F01E89369200742E74 /* DetailsPresenter.swift */; };
+		EA4100F81E89369200742E74 /* DetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4100F11E89369200742E74 /* DetailsRouter.swift */; };
+		EA4100F91E89369200742E74 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4100F21E89369200742E74 /* DetailsViewController.swift */; };
+		EA4100FA1E89369200742E74 /* DetailsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4100F31E89369200742E74 /* DetailsWorker.swift */; };
 		EA540F871E8652E2009EB951 /* AlbumListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA540F801E8652E2009EB951 /* AlbumListConfigurator.swift */; };
 		EA540F881E8652E2009EB951 /* AlbumListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA540F811E8652E2009EB951 /* AlbumListInteractor.swift */; };
 		EA540F891E8652E2009EB951 /* AlbumListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA540F821E8652E2009EB951 /* AlbumListModels.swift */; };
@@ -38,6 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA4100ED1E89369200742E74 /* DetailsConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsConfigurator.swift; sourceTree = "<group>"; };
+		EA4100EE1E89369200742E74 /* DetailsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
+		EA4100EF1E89369200742E74 /* DetailsModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsModels.swift; sourceTree = "<group>"; };
+		EA4100F01E89369200742E74 /* DetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
+		EA4100F11E89369200742E74 /* DetailsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsRouter.swift; sourceTree = "<group>"; };
+		EA4100F21E89369200742E74 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		EA4100F31E89369200742E74 /* DetailsWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsWorker.swift; sourceTree = "<group>"; };
 		EA540F801E8652E2009EB951 /* AlbumListConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListConfigurator.swift; sourceTree = "<group>"; };
 		EA540F811E8652E2009EB951 /* AlbumListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListInteractor.swift; sourceTree = "<group>"; };
 		EA540F821E8652E2009EB951 /* AlbumListModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListModels.swift; sourceTree = "<group>"; };
@@ -80,6 +94,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA4100EB1E89366000742E74 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				EA4100EC1E89367700742E74 /* DetailsScene */,
+			);
+			name = Details;
+			sourceTree = "<group>";
+		};
+		EA4100EC1E89367700742E74 /* DetailsScene */ = {
+			isa = PBXGroup;
+			children = (
+				EA4100ED1E89369200742E74 /* DetailsConfigurator.swift */,
+				EA4100EE1E89369200742E74 /* DetailsInteractor.swift */,
+				EA4100EF1E89369200742E74 /* DetailsModels.swift */,
+				EA4100F01E89369200742E74 /* DetailsPresenter.swift */,
+				EA4100F11E89369200742E74 /* DetailsRouter.swift */,
+				EA4100F21E89369200742E74 /* DetailsViewController.swift */,
+				EA4100F31E89369200742E74 /* DetailsWorker.swift */,
+			);
+			name = DetailsScene;
+			sourceTree = "<group>";
+		};
 		EA540F7E1E8652AF009EB951 /* LoadAlbums */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +178,7 @@
 		EA85487B1E83E656009E842C /* CleanSwiftTest */ = {
 			isa = PBXGroup;
 			children = (
+				EA4100EB1E89366000742E74 /* Details */,
 				EA540F8F1E8652FB009EB951 /* Services */,
 				EA540F8E1E8652F4009EB951 /* Model */,
 				EA540F7E1E8652AF009EB951 /* LoadAlbums */,
@@ -270,17 +307,24 @@
 				EA540F951E8658BF009EB951 /* Constants.swift in Sources */,
 				EA540F881E8652E2009EB951 /* AlbumListInteractor.swift in Sources */,
 				EA540F911E865334009EB951 /* Album.swift in Sources */,
+				EA4100F51E89369200742E74 /* DetailsInteractor.swift in Sources */,
+				EA4100FA1E89369200742E74 /* DetailsWorker.swift in Sources */,
 				EA540F8C1E8652E2009EB951 /* AlbumListViewController.swift in Sources */,
 				EA85487F1E83E656009E842C /* ViewController.swift in Sources */,
 				EA540F931E8658AB009EB951 /* NetworkDataManager.swift in Sources */,
+				EA4100F41E89369200742E74 /* DetailsConfigurator.swift in Sources */,
 				EA540F8D1E8652E2009EB951 /* AlbumListWorker.swift in Sources */,
 				EA540F991E86A776009EB951 /* AlbumTableViewCell.swift in Sources */,
+				EA4100F61E89369200742E74 /* DetailsModels.swift in Sources */,
 				EA540F8A1E8652E2009EB951 /* AlbumListPresenter.swift in Sources */,
 				EA540F971E8658DA009EB951 /* AlbumStore.swift in Sources */,
 				EA540F871E8652E2009EB951 /* AlbumListConfigurator.swift in Sources */,
+				EA4100F81E89369200742E74 /* DetailsRouter.swift in Sources */,
 				EA85487D1E83E656009E842C /* AppDelegate.swift in Sources */,
 				EA540F891E8652E2009EB951 /* AlbumListModels.swift in Sources */,
 				EA540F8B1E8652E2009EB951 /* AlbumListRouter.swift in Sources */,
+				EA4100F71E89369200742E74 /* DetailsPresenter.swift in Sources */,
+				EA4100F91E89369200742E74 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

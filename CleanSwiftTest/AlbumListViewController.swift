@@ -19,6 +19,7 @@ protocol AlbumListViewControllerInput
 protocol AlbumListViewControllerOutput
 {
   func fetchAlbums(request: AlbumList.Something.Request)
+        var albums: [Album] { get }
 }
 
 class AlbumListViewController: UIViewController, AlbumListViewControllerInput, UITableViewDataSource, UITableViewDelegate
